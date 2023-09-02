@@ -5,7 +5,7 @@ cat > init.sh << 'EOL'
 #!/bin/bash
 
 # Env: Getting versions
-node_version=$(node --version | sed 's/^v//')  # Убираем 'v' с начала строки
+node_version=$(node --version | sed 's/^v//')  # Remove 'v' from string
 npm_version=$(npm --version)
 
 # Env: Required versions
